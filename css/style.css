@@ -169,7 +169,6 @@ a:hover{
 
 .text P{
   position: absolute;
-  bottom: 0;
 }
 
 
@@ -219,7 +218,6 @@ input[type="submit"] {
 @media screen and (max-width: 1025px){
   
 .title-logo {
-  .title_logo {
     position: fixed;
     inset:0;
     margin: auto;
@@ -230,23 +228,21 @@ input[type="submit"] {
   display: block;
 }
 
-.photo {
-  width: 80vw;
-  margin-bottom: 3vw;
+.prose_photo {
+  width: 66.667vw;
+  height:44.5vw;
+  text-align: center;
+  margin-left: 3vw;
 }
 
 .text {
-  width: 80vw;
-  height: 20vw;
+  width: 66vw;
+  height: 48vw;
   position: relative;
   margin-bottom: 5vw;
+  margin-left: 3vw;
+  font-size: 2vw;
 }
-
-.text P{
-  position: absolute;
-  top: 0;
-}
-
 }
 
 @media screen and (max-width: 600px){
@@ -366,25 +362,6 @@ input[type="submit"] {
 
 .profile p {
   font-size:  2vw;
-}
-
-.prose_wrapper {
-  margin-left:  0;
-}
-.prose_photo {
-  width: 66.667vw;
-  height:44.5vw;
-  text-align: center;
-  margin-left: 3vw;
-}
-
-.text {
-  width: 66vw;
-  height: 48vw;
-  position: relative;
-  margin-bottom: 5vw;
-  margin-left: 3vw;
-  font-size: 2vw;
 }
 
 label {
