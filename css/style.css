@@ -35,7 +35,7 @@ a:hover{
  position: fixed;
  inset:0;
  margin: auto;
- width: 25%;
+ width: 30%;
 }
 
 #header {
@@ -69,7 +69,7 @@ a:hover{
 }
 
 .main_navi li {
-  font-size: 1vw;
+  font-size: 1.2vw;
   padding: 0.3vw 0;
   letter-spacing: 0.1vw;
   list-style: none;
@@ -87,20 +87,20 @@ a:hover{
 }
 
 .name {
-  font-size: 1vw;
+  font-size: 1.2vw;
   font-weight: bold;
   margin-bottom: 1vw;
 }
 
 .camera {
-  font-size: 0.8vw;
+  font-size: 1vw;
   font-weight: bold;
   margin-bottom: 0.5vw;
   margin-top: 1vw;
 }
 
 #profile p {
-  font-size: 0.8vw;
+  font-size: 1.2vw;
   padding: 0.1vw;
 }
 
@@ -162,7 +162,7 @@ a:hover{
 
 .text {
   width: 40%;
-  font-size: 1vw;
+  font-size: 1.2vw;
   position: relative;
   margin-bottom: 10vw;
 }
@@ -178,7 +178,7 @@ a:hover{
 }
 
 label {
-  font-size: 1vw;
+  font-size: 1.2vw;
   margin-bottom: 0.5vw;
   display: block;
 }
@@ -188,7 +188,7 @@ textarea {
   background: rgba(255,255,255,0.3);
   border: 1px  #727272 solid;
   border-radius: 3px;
-  font-size: 1vw;
+  font-size: 1.2vw;
   width: 25vw;
   padding: 0.5vw;
   margin-bottom: 1vw;
@@ -201,7 +201,7 @@ textarea {
 
 input[type="submit"] {
   border: 1px #727272 solid;
-  font-size: 1vw;
+  font-size: 1.2vw;
   cursor: pointer;
   background: rgba(255,255,255,0.3);
   color : #727272;
@@ -212,14 +212,18 @@ input[type="submit"] {
 
 .error_text {
   color :#ff1a1a;
-  font-size: 1vw;
+  font-size: 1.2vw;
   margin-bottom: 0.5vw;
 }
 
 @media screen and (max-width: 1025px){
   
 .title-logo {
- width: 30vw;
+  .title_logo {
+    position: fixed;
+    inset:0;
+    margin: auto;
+    width: 50%;
 }
 
 .prose_wrapper {
@@ -277,7 +281,7 @@ input[type="submit"] {
   }
 
   .main_navi.panelactive{
-    top: 10vw;
+    top: 20vw;
 }
 
 .main_navi ul {
