@@ -147,10 +147,11 @@ a:hover{
   display: flex;
   flex-wrap: wrap;
   width: 100%;;
+  margin-left: 5vw;
 }
 
 .photo {
-  width: 60%;
+  width: 50%;
   margin-bottom: 10vw;
 }
 
