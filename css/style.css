@@ -255,7 +255,7 @@ input[type="submit"] {
    }
 
    .main_logo {
-    width: 40%;
+    width: 50%;
     margin-top: 10vw;
     margin-left: 5vw;
     margin-bottom: 3vw;
@@ -301,7 +301,7 @@ input[type="submit"] {
 
 .main_navi li a {
   color: #727272;
-  font-size:  2vw;
+  font-size:  3vw;
   text-decoration: none;
   padding:10px;
   display: block;
@@ -352,8 +352,16 @@ input[type="submit"] {
     width: 30%;
 }
 
-#profile,#gallery,#prose,#contact {
+#profile,#prose,#contact {
   margin-top: 20vw;
+}
+
+.grid {
+  margin-top: 20vw;
+}
+
+.profile p {
+  font-size:  2vw;
 }
 
 .prose_wrapper {
@@ -372,6 +380,11 @@ input[type="submit"] {
   position: relative;
   margin-bottom: 5vw;
   margin-left: 3vw;
+  font-size: 2vw;
+}
+
+label {
+  font-size:  2vw;
 }
 
 }
