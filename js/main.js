@@ -69,3 +69,13 @@ $(function() {
 $(document).ready(function(){
   $(".main_img").colorbox({rel:'main_img', maxWidth:"90%", maxHeight:"90%"});
 });
+
+$(".openbtn1").click(function () {//ボタンがクリックされたら
+  $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+    $(".main_navi").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+});
+
+$(".main_navi a").click(function () {//ナビゲーションのリンクがクリックされたら
+    $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
+    $(".main_navi").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+});

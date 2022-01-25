@@ -35,7 +35,7 @@ a:hover{
  position: fixed;
  inset:0;
  margin: auto;
- width: 20%;
+ width: 25%;
 }
 
 #header {
@@ -246,7 +246,119 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 600px){
-  
+
+  .title_logo {
+    position: fixed;
+    inset:0;
+    margin: auto;
+    width: 50%;
+   }
+
+   .main_logo {
+    width: 40%;
+    margin-top: 10vw;
+    margin-left: 5vw;
+    margin-bottom: 3vw;
+  }
+
+  .wrapper {
+    display:  block;
+  }
+
+  .main_navi {
+    position: fixed;
+    z-index: 999;
+    top: 120%;
+    left:  0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba( 255, 255, 255, 0.8 );
+     transition:  all 1s;
+  }
+
+  .main_navi.panelactive{
+    top: 10vw;
+}
+
+.main_navi ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top:20%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+ .openbtn1{
+  position:fixed;
+    z-index: 9999;/*ボタンを最前面に*/
+  top:10vw;
+  right: 10px;
+  cursor: pointer;
+    width: 50px;
+    height:50px;
+}
+
+.main_navi li a {
+  color: #727272;
+  font-size:  2vw;
+  text-decoration: none;
+  padding:10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+/*×に変化*/  
+.openbtn1 span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background-color: #666;
+    width: 45%;
+  }
+
+.openbtn1 span:nth-of-type(1) {
+  top:15px; 
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top:31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+#profile,#gallery,#prose,#contact {
+  margin-top: 20vw;
+}
+
+.prose_wrapper {
+  margin-left:  0;
+}
 .prose_photo {
   width: 66.667vw;
   height:44.5vw;
