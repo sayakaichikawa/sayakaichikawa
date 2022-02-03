@@ -11,13 +11,6 @@ jQuery(function($) {
   });
 });
 
-/* メインニューの表示・非表示 */
-//$('.main_navi').toggle();
-//$('.main_logo').click(function(){
-  //$('.main_navi').show();
-//});
-
-
 //プロフィールの表示・非表示 
 $('.profile').on('click', function(){
   $('#profile').fadeToggle();
@@ -30,10 +23,24 @@ $('.gallery').on('click', function(){
   $('#profile,#contact,#prose').hide();
 });
 
+$('.gallery').on('click', function(){
+  window.scroll({
+    top: 0,
+    behavior: "smooth"
+  })
+});
+
 // 散文の表示・非表示 
 $('.prose').on('click', function(){
   $('#prose').fadeToggle();
   $('#profile,#gallery,#contact').hide();
+});
+
+$('.prose').on('click', function(){
+  window.scroll({
+    top: 0,
+    behavior: "smooth"
+  })
 });
 
 // コンタクトの表示・非表示 
@@ -41,7 +48,6 @@ $('.contact').on('click', function(){
   $('#contact').fadeToggle();
   $('#profile,#gallery,#prose').hide();
 });
-
 
 //お問い合わせフォームのバリデーション
 $(function() {
